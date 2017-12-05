@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgModule } from '@angular/core'; 
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,24 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  cite = {
+    quote : "",
+    author: "",
+    vote: 0
+  }
+
+  list:Array<object> = [];
+
+  onSubmit(){
+    this.list.push(this.cite);
+    console.log(this.list);
+    this.cite = {
+      quote:"",
+      author:"",
+      vote:0
+    }
+  }
+
+ 
 }

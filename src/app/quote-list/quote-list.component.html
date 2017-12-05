@@ -1,0 +1,12 @@
+<div class="list" [ngClass]="{'quote_List': true}" *ngFor="let one of cites; let idx = index">
+  <div class="quote" >
+    <p >{{one.quote}}</p> 
+    <p>{{one.author}}</p>
+  </div>
+  <p class="vote" ng-click="votes()">{{one.vote}}</p>
+  <div class="btncolumn">
+    <button id="up"      type="" style="background-color:darkkhaki" (click)='voteUp(idx)'   value="1" ng-click="count = count + 1" ng-init="count=0">VOTE UP</button><br>
+    <button id='down'    type="" style="background-color:coral"     (click)='voteDown(idx)' value="0" ng-click="count = count - 1" ng-init="count=0">VOTE DOWN</button><br>
+    <button id ='delete' type="" style="background-color:darkgrey"  (click)='delete(idx)'                                                           >DELETE</button>
+  </div>
+</div>

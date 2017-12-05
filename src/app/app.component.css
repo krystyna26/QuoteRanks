@@ -1,0 +1,21 @@
+.userinput {
+    
+    width: 853px;
+    border: 1px solid black;
+    margin: 15px;
+    padding: 10px;
+}
+
+textarea {
+    text-align: left;
+}
+
+.input {
+    position: relative;
+    /* left: 10px; */
+    margin: 10px 0px;
+}
+
+button {
+    /* margin: 10px 0px; */
+}
